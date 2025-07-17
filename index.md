@@ -6,17 +6,19 @@ layout: homepage
 
 I am a Ph.D. student at ...
 
-## Research Interests
+ I am a CS Ph.D. Student at Georgia Tech specializing in Computing Systems. 
+ I am interested in research regarding Distributed Systems/Operating Systems, specifically in
+ improving resource utilization efficiency and reducing network communication overheads for datacenter workloads.
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+---
+
+ I am currently a part of the Kernel Research Group at Georgia Tech, advised by Prof. Ada Gavrilovska.
+ Prior to pursuing my Ph.D. at Georgia Tech, I worked at the GeForce Now team @Nvidia and the 
+ Server Performance Team @ AMD. 
 
 ## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+{% include newsbar.html %}
 
 {% include_relative _includes/publications.md %}
 
