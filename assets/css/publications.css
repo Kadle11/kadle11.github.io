@@ -84,7 +84,6 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .newsbar-vertical-scroll {
   max-height: 120px;
   overflow-y: auto;
-  background: var(--global-bg-color, #f8f8f8);
   border-radius: 5px;
   border: 1px solid #e0e0e0;
   margin-bottom: 1em;
