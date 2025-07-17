@@ -18,7 +18,7 @@ I am a Ph.D. student at ...
 
 ## News
 
-{% include newsbar.html %}
+{% include_relative _includes/newsbar.md %}
 
 {% include_relative _includes/publications.md %}
 
