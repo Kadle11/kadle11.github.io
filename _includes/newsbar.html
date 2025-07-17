@@ -1,34 +1,33 @@
-<div class="newsbar-wrapper">
-  <div class="newsbar-scroll">
+<div class="newsbar-wrapper-vertical">
+  <div class="newsbar-vertical-scroll">
     {% for item in site.data.news.main %}
-      <span class="newsbar-item"><strong>[{{ item.date }}]</strong> {{ item.desc }}</span>
+      <div class="newsbar-item-vertical"><strong>[{{ item.date }}]</strong> {{ item.desc }}</div>
     {% endfor %}
   </div>
 </div>
 <style>
-.newsbar-wrapper {
+.newsbar-wrapper-vertical {
   width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
+  max-height: 120px;
+  overflow-y: auto;
   background: var(--global-bg-color, #f8f8f8);
   border-radius: 5px;
   border: 1px solid #e0e0e0;
   margin-bottom: 1em;
-  padding: 0.5em 0;
+  padding: 0.5em 0.5em 0.5em 1em;
 }
-.newsbar-scroll {
+.newsbar-vertical-scroll {
   display: flex;
-  align-items: center;
-  animation: scroll-left 30s linear infinite;
+  flex-direction: column;
+  gap: 0.5em;
 }
-.newsbar-item {
-  display: inline-block;
-  margin-right: 2em;
+.newsbar-item-vertical {
   font-size: 1rem;
   color: var(--global-text-color, #222);
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #e0e0e0;
 }
-@keyframes scroll-left {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+.newsbar-item-vertical:last-child {
+  border-bottom: none;
 }
 </style> 
