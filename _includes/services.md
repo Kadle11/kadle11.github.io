@@ -7,7 +7,7 @@
   {% endfor %}
 </ul>
 
-<h4 style="margin:0 10px 0;">Teaching</h4>
+<h4 style="margin:0 10px 0;">Teaching Assistantships</h4>
 <ul style="margin:0 0 20px;">
   {% for reviewer in site.data.services.main.teaching %}
     <li><autocolor>{{ reviewer.name }} {{ reviewer.years }}</autocolor></li>
