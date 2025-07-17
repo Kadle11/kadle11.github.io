@@ -85,10 +85,37 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
   max-height: 120px;
   overflow-y: auto;
   border-radius: 5px;
-  border: 1px solid #e0e0e0;
+  /* border: 1px solid #e0e0e0; */
   margin-bottom: 1em;
   padding: 0.5em 0.5em 0.5em 1em;
   display: flex;
   flex-direction: column;
   gap: 0.5em;
 }
+
+.newsbar-vertical-scroll li .newsbar-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsbar-vertical-scroll li .newsbar-row .title {
+  flex: 1;
+  margin-right: 1em;
+}
+
+.newsbar-vertical-scroll li .newsbar-row .title strong {
+  color: var(--global-theme-color);
+}
+
+.newsbar-vertical-scroll li .newsbar-row .title a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.newsbar-vertical-scroll li .newsbar-row .title a:hover {
+  color: var(--global-hover-color);
+  text-decoration: underline;
+}
+
+
