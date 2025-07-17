@@ -1,7 +1,7 @@
 <h2 id="publications" style="margin: 2px 0px -15px;">News</h2>
 
 <div class="newsbar-vertical-scroll">
-<ol class="bibliography">
+<ol class="new-items">
 
 {% for item in site.data.news.main %}
 <li>

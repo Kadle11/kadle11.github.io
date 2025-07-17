@@ -94,7 +94,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
   gap: 0.5em;
 }
 
-.newsbar-vertical-scroll li .newsbar-row {
+.newsbar-vertical-scroll li ol.new-items li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,4 +120,12 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
   text-decoration: underline;
 }
 
+.services {
+  margin-top: 2rem;
+}
+
+.services ol.svc-item li {
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
 
