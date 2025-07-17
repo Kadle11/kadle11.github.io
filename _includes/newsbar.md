@@ -1,4 +1,4 @@
-<h2 id="news" style="margin: 2px 0px -15px;">News</h2>
+<h2 id="publications" style="margin: 2px 0px -15px;">News</h2>
 
 <div class="newsbar-vertical-scroll">
 <ol class="bibliography">

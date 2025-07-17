@@ -14,8 +14,6 @@ layout: homepage
  Prior to pursuing my Ph.D. at Georgia Tech, I worked at the GeForce Now team @Nvidia and the 
  Server Performance Team @ AMD. 
 
-## News
-
 {% include_relative _includes/newsbar.md %}
 
 {% include_relative _includes/publications.md %}
