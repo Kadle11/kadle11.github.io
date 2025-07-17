@@ -98,6 +98,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
 }
 
 .newsbar-vertical-scroll li .newsbar-row .title {
