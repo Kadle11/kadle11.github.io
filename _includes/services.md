@@ -1,4 +1,4 @@
-<h2 id="publications" style="margin: 2px 0px -15px;">Service/Teaching</h2>
+# Service/Teaching
 
 <h4 style="margin:0 10px 0;">Artificat Evaluation Committees</h4>
 <ol class="bibliography">
