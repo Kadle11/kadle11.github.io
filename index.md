@@ -5,8 +5,9 @@ layout: homepage
 ## About Me
 
  I am a CS Ph.D. Student at Georgia Tech specializing in Computing Systems. 
- I am interested in research regarding Distributed Systems/Operating Systems, specifically in
- improving resource utilization efficiency and reducing network communication overheads for datacenter workloads.
+ I am interested in research regarding Distributed Systems/Operating Systems,
+ specifically in improving resource utilization efficiency and reducing network
+ communication overheads for datacenter workloads.
 
 ---
 
