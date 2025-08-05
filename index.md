@@ -11,7 +11,7 @@ layout: homepage
 
 ---
 
- I am currently a part of the Kernel Research Group at Georgia Tech, advised by (Prof. Ada Gavrilovska)[https://sites.cc.gatech.edu/home/ada/].
+ I am currently a part of the Kernel Research Group at Georgia Tech, advised by [Prof. Ada Gavrilovska](https://sites.cc.gatech.edu/home/ada/).
  Prior to pursuing my Ph.D. at Georgia Tech, I worked at the GeForce Now team @Nvidia and the 
  Server Performance Team @ AMD. 
 
