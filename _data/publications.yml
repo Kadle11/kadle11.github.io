@@ -13,7 +13,7 @@ main:
   - title: "Towards Disaggregated NDP Architectures for Large-scale Graph Analytics"
     authors: Suyeon Lee*, Vishal Rao*, Ada Gavrilovska
     conference_short: RESDIS
-    conference: Workshop on Resource Disaggregation in High-Performance Computing <strong>(REDIS)</strong>, 2024.
+    conference: Workshop on Resource Disaggregation in High-Performance Computing <strong>(RESDIS)</strong>, 2024.
     # pdf: -
     # pdf: -
     # code: -

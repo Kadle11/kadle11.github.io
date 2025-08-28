@@ -3,17 +3,12 @@ layout: homepage
 ---
 
 ## About Me
-
- I am a CS Ph.D. Student at Georgia Tech specializing in Computing Systems. 
- I am interested in research regarding Distributed Systems/Operating Systems,
- specifically in improving resource utilization efficiency and reducing network
- communication overheads for datacenter workloads.
-
----
-
- I am currently a part of the Kernel Research Group at Georgia Tech, advised by [Prof. Ada Gavrilovska](https://sites.cc.gatech.edu/home/ada/).
- Prior to pursuing my Ph.D. at Georgia Tech, I worked at the GeForce Now team @Nvidia and the 
- Server Performance Team @ AMD. 
+ Vishal Rao is a third-year Ph.D. student in Computer Science at Georgia Tech, advised by [Ada Gavrilovska](https://sites.cc.gatech.edu/home/ada/). He is broadly interested in
+ distributed systems with a focus on systems for emerging memory technologies
+ and high-performance computing. His current work explores the use of
+ memory disaggregation and near-data processing for datacenter workloads (HPDC
+ '25). Prior to pursuing his Ph.D, he worked at the GeForce Now team at Nvidia
+ and the Server Performance Group at AMD. 
 
 {% include_relative _includes/newsbar.md %}
 
