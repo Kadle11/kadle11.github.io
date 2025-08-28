@@ -3,7 +3,9 @@ layout: homepage
 ---
 
 ## About Me
- Vishal Rao is a third-year Ph.D. student in Computer Science at Georgia Tech, advised by [Ada Gavrilovska](https://sites.cc.gatech.edu/home/ada/). He is broadly interested in
+ Vishal Rao is a third-year Ph.D. student in Computer Science at Georgia Tech,
+ advised by [Prof. Ada Gavrilovska](https://sites.cc.gatech.edu/home/ada/). He is
+ broadly interested in
  distributed systems with a focus on systems for emerging memory technologies
  and high-performance computing. His current work explores the use of
  memory disaggregation and near-data processing for datacenter workloads (HPDC
