@@ -1,7 +1,7 @@
 # Service/Teaching
 
 <div class="services">
-  <h4 style="margin:0 10px 0;">Artificat Evaluation Committees</h4>
+  <h4 style="margin:0 10px 0;">Artifcat Evaluation Committees</h4>
   <ol class="svc-item">
 
     {% for reviewer in site.data.services.main.artifact_evaluation_committees %}
