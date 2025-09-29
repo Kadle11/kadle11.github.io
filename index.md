@@ -7,7 +7,7 @@ layout: homepage
  advised by [Prof. Ada Gavrilovska](https://sites.cc.gatech.edu/home/ada/). He is
  broadly interested in
  distributed systems with a focus on systems for emerging memory technologies
- and high-performance computing. His current work explores the use of
+ and memory tiering. His current work explores the use of
  memory disaggregation and near-data processing for datacenter workloads (HPDC
  '25). Prior to pursuing his Ph.D., he worked at the GeForce Now team at Nvidia
  and the Server Performance Group at AMD. 
