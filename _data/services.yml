@@ -4,6 +4,8 @@ main:
       years: "2024, 2025"
     - name: "SOSP"
       years: "2025"
+    - name: "ATC"
+      years: "2024, 2025"
   teaching:
     - name: "Distributed Computing (CS 7210)"
       years: "Spring '22, Fall '23, Spring '25"
