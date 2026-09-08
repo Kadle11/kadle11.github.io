@@ -24,6 +24,29 @@
 
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 
+    {% if site.google_analytics %}
+    <!-- Google Analytics 4. Injected rather than hard-coded so it can be
+         skipped on localhost — otherwise every `jekyll serve` preview shows up
+         as real traffic in the reports. -->
+    <script>
+      (function () {
+        var host = location.hostname;
+        if (host === 'localhost' || host === '127.0.0.1' || host === '[::1]' || host === '') return;
+
+        var id = '{{ site.google_analytics }}';
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+        document.head.appendChild(s);
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        gtag('js', new Date());
+        gtag('config', id);
+      })();
+    </script>
+    {% endif %}
+
     <!-- Applied before first paint so a dark-mode visitor never sees a light flash. -->
     <script>
       (function () {
@@ -82,14 +105,5 @@
       })();
     </script>
     <script defer src="{{ "/assets/js/news-fit.js" | relative_url }}"></script>
-    {% if site.google_analytics %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '{{ site.google_analytics }}');
-    </script>
-    {% endif %}
   </body>
 </html>

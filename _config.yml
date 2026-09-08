@@ -33,9 +33,12 @@ enable_footnote: true
 # toggle always overrides it, and the choice is remembered in localStorage.
 auto_dark_mode: true
 
-# Google Analytics ID
-# Please remove this if you don't use Google Analytics
-# google_analytics: G-XXXXXXXXXX
+# Google Analytics 4 measurement ID. Uncomment and paste your own to enable
+# tracking; leave it commented out and no analytics code is emitted at all.
+# Get one at analytics.google.com: create a property, add a "Web" data stream
+# for https://kadle11.github.io, and copy the G- prefixed ID it hands back.
+# Localhost visits are skipped, so `jekyll serve` previews stay out of reports.
+google_analytics: G-N4BZXBST2V
 
 # The following files will be removed from the generated website.
 exclude:
