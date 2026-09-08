@@ -1,8 +1,12 @@
 main:
+  - date: "Sep. 2026"
+    desc: "Started as an AI/HPC Systems Research Intern at SoLab, SK Hynix America."
   - date: "Aug. 2025"
     desc: "Passed the systems qualifier exam at GaTech!"
   - date: "Jul. 2025"
-    desc: "Presented Grudon at SAL Tech Series at Hewlett Packard Labs."
+    desc: "Presented Grudon at the SAL Tech Talk Series at Hewlett Packard Labs."
+  - date: "May 2025"
+    desc: "Joined the Systems Architecture Lab at HPE Labs as a Research Associate Intern."
   - date: "Apr. 2025"
     desc: "Grudon is accepted to HPDC 2025!"
   - date: "Sep. 2024"

@@ -1,0 +1,23 @@
+<h2 id="publications">Publications</h2>
+
+{% for pub in site.data.publications.main %}
+<div class="pub-compact">
+  <div class="pub-venue">{{ pub.venue }}</div>
+  <div class="pub-details">
+    {% if pub.pdf %}
+    <a class="pub-title" href="{{ pub.pdf }}" target="_blank" rel="noopener">{{ pub.title }}</a>
+    {% else %}
+    <span class="pub-title">{{ pub.title }}</span>
+    {% endif %}
+    {% capture self_name %}<span class="thisauthor">{{ site.title }}</span>{% endcapture %}
+    <div class="pub-authors">{{ pub.authors | replace: site.title, self_name }}</div>
+    {% if pub.notes %}
+    <div class="pub-note">{{ pub.notes }}</div>
+    {% endif %}
+    {% capture pub_links %}{% if pub.pdf %}<a href="{{ pub.pdf }}" target="_blank" rel="noopener">paper</a>{% endif %}{% if pub.slides %}<a href="{{ pub.slides }}" target="_blank" rel="noopener">slides</a>{% endif %}{% if pub.code %}<a href="{{ pub.code }}" target="_blank" rel="noopener">code</a>{% endif %}{% if pub.page %}<a href="{{ pub.page }}" target="_blank" rel="noopener">website</a>{% endif %}{% if pub.bibtex %}<a href="{{ pub.bibtex }}" target="_blank" rel="noopener">bibtex</a>{% endif %}{% endcapture %}
+    {% if pub_links != "" %}
+    <div class="pub-links">{{ pub_links | replace: '</a><a', '</a> / <a' }}</div>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}

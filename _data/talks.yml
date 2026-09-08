@@ -1,0 +1,10 @@
+# The Talks section renders only when this list is non-empty.
+# Each talk carries one title and one or more venues it was given at.
+
+main:
+  - title: "Towards Disaggregated NDP Architectures for Large-scale Graph Analytics"
+    venues:
+      - name: "SAL Tech Talk Series, HPE Labs"
+        date: "July 2025"
+      - name: "SRC PRISM Liaison Talk"
+        date: "May 2025"

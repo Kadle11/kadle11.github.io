@@ -1,0 +1,10 @@
+<h2 id="teaching">Teaching</h2>
+
+<ul class="entry-list">
+{% for course in site.data.services.main.teaching %}
+  <li class="entry-item">
+    {{ course.role | default: "Teaching Assistant" }}, <span class="venue">{{ course.name }}</span>
+    {% if course.years %}<span class="date">{{ course.years }}</span>{% endif %}
+  </li>
+{% endfor %}
+</ul>

@@ -2,21 +2,32 @@ main:
 
   - title: "Grudon: A System for Deploying Graph Workloads on Disaggregated Architectures with Near-Data Processing"
     authors: Vishal Rao, Nikhil Ram Shashidhar, Suyeon Lee, Ada Gavrilovska
-    conference_short: HPDC
-    conference: International Symposium on High-Performance Parallel and Distributed Computing <strong>(HPDC)</strong>, 2025.
+    venue: HPDC 2025
+    conference: The 31st International Symposium on High-Performance Parallel and Distributed Computing
     # pdf: -
+    # slides: -
     # code: -
+    # page: -
     # bibtex: -
-    # image: -
     # notes: -
 
   - title: "Towards Disaggregated NDP Architectures for Large-scale Graph Analytics"
     authors: Suyeon Lee*, Vishal Rao*, Ada Gavrilovska
-    conference_short: RESDIS
-    conference: Workshop on Resource Disaggregation in High-Performance Computing <strong>(RESDIS)</strong>, 2024.
+    venue: RESDIS 2024
+    conference: The 4th International Workshop on RESource DISaggregation in High-Performance Computing
+    notes: "*equal contribution"
     # pdf: -
-    # pdf: -
+    # slides: -
     # code: -
+    # page: -
     # bibtex: -
-    # image: -
-    # notes: -
+
+  - title: "Scheduling microservice containers on large core machines through placement and coalescing"
+    authors: Vishal Rao, Vishnu Singh, KS Goutham, Bharani Ujjaini Kempaiah, Ruben John Mampilli, Subramaniam Kalambur, Dinkar Sitaram
+    venue: JSSPP 2021
+    conference: 24th International Workshop on Job Scheduling Strategies for Parallel Processing
+    # pdf: -
+    # slides: -
+    # code: -
+    # page: -
+    # bibtex: -

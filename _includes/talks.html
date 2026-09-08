@@ -1,0 +1,15 @@
+{% assign talks = site.data.talks.main %}
+{% if talks and talks.size > 0 %}
+<h2 id="talks">Talks</h2>
+
+<ul class="entry-list">
+{% for talk in talks %}
+  <li class="entry-item">
+    <span class="talk-title">{{ talk.title }}</span>
+    {% for venue in talk.venues %}
+    <span class="talk-venue"><span class="venue">{{ venue.name }}</span>{% if venue.date %} <span class="talk-date">{{ venue.date }}</span>{% endif %}</span>
+    {% endfor %}
+  </li>
+{% endfor %}
+</ul>
+{% endif %}

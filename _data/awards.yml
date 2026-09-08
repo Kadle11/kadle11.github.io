@@ -1,0 +1,10 @@
+# Rendered as a plain bulleted "year: award" list, following manishs.org.
+# `date` and `detail` are optional; `detail` adds a smaller second line.
+
+main:
+  - date: "2025"
+    name: "Best Poster Runner-up, SRC PRISM Annual Review"
+    detail: "Grudon: Deploying Graph Workloads on Disaggregated Architectures with Near-Data Processing"
+
+  - date: "2016 – 2020"
+    name: "C. N. R. Rao Scholarship, CS Department, PES University (4x recipient)"

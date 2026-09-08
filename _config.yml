@@ -1,57 +1,47 @@
-# Basic Information 
+# Basic Information
 title: Vishal Rao
 position: Ph.D. Student
 affiliation: Georgia Institute of Technology
-email: vrao[79] (at) gatech.edu
+email: vishal.rao (at) gatech.edu
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: Vishal Rao, Georgia Tech, Ph.D. Student, Computer Science, Researcher
-# description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
-# canonical: https://minimal-light-theme.yliu.me/
+keywords: Vishal Rao, Georgia Tech, Ph.D. Student, Computer Science, Researcher, Memory Disaggregation, Vector Databases, Systems for AI, Emerging Hardware, Graph Analytics
+description: Vishal Rao is a Ph.D. student in Computer Science at Georgia Tech working on memory disaggregation, vector databases, and systems for AI and emerging hardware.
+# canonical: https://kadle11.github.io/
 
-# Links 
+# Links
 # If you don't need one of them, you may delete the corresponding line.
 google_scholar: https://scholar.google.com/citations?user=_gD7bPUAAAAJ
-# cv_link: assets/files/curriculum_vitae.pdf
+cv_link: ./assets/files/VishalRao_Resume.pdf
 github_link: https://github.com/Kadle11
 linkedin: https://www.linkedin.com/in/vishal-rao11/
 # twitter: https://twitter.com/
 
-# Images (e.g., your profile picture and your website's favicon) 
-# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
+# Images. The favicon is a single "VR" mark on the site's accent colour, so it
+# needs no light/dark pair. Regenerate it with scripts/make_favicon.py and bump
+# favicon_version so browsers drop their cached copy.
 avatar: ./assets/img/avatar.jpg
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
+favicon_version: 2
 
 # Footnote
-# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
+# Set to false to hide the credit line in the page footer.
 enable_footnote: true
 
 # Auto Dark Mode
-# You may use the option to disable the automatic dark theme
+# When true, the first visit follows the visitor's system theme. The navbar
+# toggle always overrides it, and the choice is remembered in localStorage.
 auto_dark_mode: true
-
-# Font
-# You can use this option to choose between Serif or Sans Serif fonts.
-font: "Serif" # or "Sans Serif"
 
 # Google Analytics ID
 # Please remove this if you don't use Google Analytics
-# google_analytics: UA-111540567-4
-
-# Use this project as a remote theme for GitHub Pages
-# See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-remote_theme: yaoyao-liu/minimal-light
+# google_analytics: G-XXXXXXXXXX
 
 # The following files will be removed from the generated website.
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - README_zh_Hans.md
-  - README_zh_Hant.md
-  - README_de.md
   - LICENSE
-  - minimal-light.gemspec
   - html_source_file/
+  - scripts/

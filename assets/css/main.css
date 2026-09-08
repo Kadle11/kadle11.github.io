@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400..700;1,400..700&display=swap");
+
+/* ------------------------------------------------------------------
+   Base — layout and typography follow manishs.org: a single 700px
+   column on warm paper, EB Garamond headings over Alegreya Sans body.
+   ------------------------------------------------------------------ */
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Alegreya Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+  background-color: #f8f6f1;
+  color: #2c2520;
+  line-height: 1.35;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+a {
+  color: #2c2520;
+  font-size: medium;
+  text-decoration: none;
+  border-bottom: #c4b698 0.1em dotted;
+}
+
+a:hover,
+a:focus {
+  background: #f3ebe0;
+  transition-property: background;
+  transition-duration: 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "EB Garamond", Georgia, serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 1.9em;
+  margin-bottom: 0.6em;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #e6ded0;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.content {
+  padding-bottom: 60px;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.content ul {
+  padding: 0 0 0 20px;
+}
+
+.content ul > li {
+  margin: 5px 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 8px;
+  top: 8px;
+  padding: 6px 10px;
+  background: #f8f6f1;
+  z-index: 10;
+}
+
+/* ------------------------------------------------------------------
+   Navbar — name on the left, dark-mode toggle on the right.
+   ------------------------------------------------------------------ */
+
+.navbar {
+  padding: 50px 0;
+}
+
+#author-name {
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #1a1a1a;
+  display: inline-block;
+  border-bottom: none;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+#author-name:hover {
+  background: none;
+}
+
+.navbar-ul {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  padding: 5px 0;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0 5px 0 10px;
+}
+
+.alignable,
+.pull-left,
+.pull-right {
+  display: inline-block;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+/* ------------------------------------------------------------------
+   Intro — profile photo beside the bio, links underneath.
+   ------------------------------------------------------------------ */
+
+.content .intro-section {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  column-gap: 40px;
+  align-items: start;
+  margin-top: 5%;
+  margin-bottom: 10px;
+}
+
+.content .intro-section .profile-picture {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: block;
+  border-radius: 3px;
+}
+
+.intro-unit {
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.intro-links {
+  margin-top: 14px;
+}
+
+.intro-links a {
+  white-space: nowrap;
+}
+
+.news-scroll {
+  position: relative;
+  max-height: 348px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd transparent;
+}
+
+.news-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.news-scroll::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 3px;
+}
+
+.news-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+}
+
+.news-item {
+  border-left: 1px solid #ded5c4;
+  padding-left: 12px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.news-title {
+  font-size: 0.92em;
+  font-weight: 400;
+  color: #2c3137;
+}
+
+.news-item .date {
+  display: block;
+  padding-top: 4px;
+  font-size: 0.72em;
+  color: #8a8178;
+}
+
+/* ------------------------------------------------------------------
+   Publications — venue rail on the left, entry on the right.
+   ------------------------------------------------------------------ */
+
+.pub-compact {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 0 8px;
+  margin-bottom: 24px;
+  align-items: baseline;
+}
+
+.pub-venue {
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #a85a3a;
+  white-space: nowrap;
+  padding-top: 1px;
+}
+
+.pub-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pub-title {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #2c3137;
+  border-bottom: none;
+  line-height: 1.35;
+}
+
+.pub-title:hover {
+  background: none;
+  text-decoration: underline;
+}
+
+.pub-authors {
+  font-size: 0.75em;
+  color: #666;
+  line-height: 1.4;
+}
+
+.pub-authors .thisauthor {
+  font-weight: 500;
+  color: #2c2520;
+}
+
+.pub-links {
+  font-size: 0.85em;
+  margin-top: 2px;
+}
+
+.pub-links a {
+  color: #555;
+  margin-right: 4px;
+  font-size: inherit;
+}
+
+.pub-links a:hover {
+  color: #333;
+}
+
+.pub-note {
+  font-size: 0.75em;
+  font-style: italic;
+  color: #a85a3a;
+}
+
+/* ------------------------------------------------------------------
+   Awards / Service / Teaching — one line-item per entry.
+   ------------------------------------------------------------------ */
+
+/* Specific enough to beat `.content ul`, so the left rail lines up with News. */
+.content ul.entry-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entry-item {
+  border-left: 1px solid #ded5c4;
+  padding-left: 12px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 0.92em;
+}
+
+.entry-item .venue {
+  color: #a85a3a;
+}
+
+.entry-item .date {
+  display: block;
+  padding-top: 4px;
+  font-size: 0.78em;
+  color: #8a8178;
+}
+
+/* Second line of an award: the poster or paper the award was given for. */
+.entry-detail {
+  display: block;
+  padding-top: 2px;
+  font-size: 0.85em;
+  color: #6b625a;
+}
+
+/* A talk is one title over the venues it was given at. */
+.talk-title {
+  display: block;
+  color: #2c3137;
+}
+
+.talk-venue {
+  display: block;
+  padding-top: 3px;
+  font-size: 0.85em;
+}
+
+.talk-date {
+  color: #8a8178;
+  font-size: 0.9em;
+}
+
+.talk-date::before {
+  content: "·";
+  margin-right: 5px;
+}
+
+.site-footer {
+  margin-top: 60px;
+  padding: 20px 0 60px;
+  border-top: 1px solid #e6ded0;
+  font-size: 0.75em;
+  color: #8a8178;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #8a8178;
+  font-size: inherit;
+}
+
+/* ------------------------------------------------------------------
+   Dark mode toggle
+   ------------------------------------------------------------------ */
+
+.toggle-switch {
+  display: inline-block;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  background-color: #fffff8;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  width: 35px;
+  height: 18px;
+  border-radius: 34px;
+  border: 1px solid #2c2520;
+}
+
+.toggle-slider {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: black;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  border-radius: 50%;
+}
+
+.toggle-input:checked + .toggle-label {
+  background: #444;
+}
+
+.toggle-input:checked + .toggle-label .toggle-slider {
+  transform: translateX(17px);
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-mode a {
+  color: #c47559;
+  border-bottom-color: #404040;
+}
+
+body.dark-mode a:hover,
+body.dark-mode a:focus {
+  background: #2d2d2d;
+}
+
+body.dark-mode #author-name {
+  color: #e0e0e0;
+}
+
+body.dark-mode h2 {
+  border-bottom-color: #333;
+}
+
+body.dark-mode hr {
+  border-top-color: #404040;
+}
+
+body.dark-mode .news-item,
+body.dark-mode .entry-item {
+  border-left-color: #3a3a3a;
+}
+
+body.dark-mode .news-title,
+body.dark-mode .pub-title {
+  color: #e0e0e0;
+}
+
+body.dark-mode .news-item .date,
+body.dark-mode .entry-item .date,
+body.dark-mode .talk-date {
+  color: #888;
+}
+
+body.dark-mode .entry-detail {
+  color: #a8a8a8;
+}
+
+body.dark-mode .talk-title {
+  color: #e0e0e0;
+}
+
+body.dark-mode .pub-venue,
+body.dark-mode .entry-item .venue,
+body.dark-mode .pub-note {
+  color: #d68567;
+}
+
+body.dark-mode .pub-authors {
+  color: #999;
+}
+
+body.dark-mode .pub-authors .thisauthor {
+  color: #e0e0e0;
+}
+
+body.dark-mode .pub-links a {
+  color: #999;
+}
+
+body.dark-mode .pub-links a:hover {
+  color: #ccc;
+}
+
+body.dark-mode .news-scroll {
+  scrollbar-color: #444 transparent;
+}
+
+body.dark-mode .news-scroll::-webkit-scrollbar-thumb {
+  background-color: #444;
+}
+
+body.dark-mode .site-footer {
+  border-top-color: #333;
+  color: #888;
+}
+
+body.dark-mode .site-footer a {
+  color: #888;
+}
+
+/* ------------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------------ */
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 500px;
+    transition: 0.3s ease all;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    max-width: 83%;
+  }
+
+  .navbar-ul {
+    margin-top: 5px;
+  }
+
+  .content .intro-section {
+    grid-template-columns: 1fr;
+  }
+
+  .content .intro-section .profile-picture {
+    max-width: 140px;
+    margin-bottom: 10px;
+  }
+
+  .pub-compact {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .pub-venue {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    text-align: center;
+    padding: 50px 0 0 0;
+  }
+
+  #author-name {
+    width: 100%;
+    float: none;
+  }
+
+  #navlist {
+    padding: 10px 0;
+    margin: 0;
+    display: block;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  #navlist li.alignable,
+  #navlist li.pull-left,
+  #navlist li.pull-right {
+    display: inline-block;
+  }
+
+  #navlist li.pull-left {
+    float: none;
+  }
+
+  #navlist li.nav-list {
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .toggle-switch {
+    display: none;
+  }
+}

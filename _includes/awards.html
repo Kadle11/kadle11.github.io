@@ -1,0 +1,12 @@
+{% assign awards = site.data.awards.main %}
+{% if awards and awards.size > 0 %}
+<h2 id="awards">Awards</h2>
+
+<aside>
+  <ul>
+  {% for award in awards %}
+    <li>{% if award.date %}{{ award.date }}: {% endif %}{{ award.name }}{% if award.detail %}<span class="entry-detail">{{ award.detail }}</span>{% endif %}</li>
+  {% endfor %}
+  </ul>
+</aside>
+{% endif %}

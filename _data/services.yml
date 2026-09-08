@@ -1,11 +1,31 @@
 main:
-  artifact_evaluation_committees:
-    - name: "OSDI"
-      years: "2024, 2025"
-    - name: "SOSP"
-      years: "2025"
-    - name: "ATC"
-      years: "2024, 2025"
+  # Each service role takes either `venues` (accent-coloured conference list)
+  # or `text` (a plain string, for roles that aren't tied to a venue).
+  service:
+    - name: "Artifact Evaluation Committees"
+      venues:
+        - "SOSP'25"
+        - "OSDI'25"
+        - "ATC'25"
+        - "OSDI'24"
+        - "ATC'24"
+
+    - name: "Shadow Program Committees"
+      venues:
+        - "EuroSys'26"
+
+    - name: "Student Volunteer"
+      venues:
+        - "OSDI'24"
+
+    - name: "GT SCS Graduate Student Association"
+      text: "President (2024 – 2025)"
+
   teaching:
-    - name: "Distributed Computing (CS 7210)"
-      years: "Spring '22, Fall '23, Spring '25"
+    - name: "CS 7210: Distributed Computing"
+      role: "Teaching Assistant"
+      years: "Fall 2025, Fall 2022, Spring 2022"
+
+    - name: "CS 352: Cloud Computing"
+      role: "Teaching Assistant"
+      years: "Spring 2020"

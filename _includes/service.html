@@ -1,0 +1,10 @@
+<h2 id="service">Service</h2>
+
+<ul class="entry-list">
+{% for role in site.data.services.main.service %}
+  <li class="entry-item">
+    {{ role.name }}:
+    {% if role.text %}{{ role.text }}{% else %}{% for venue in role.venues %}<span class="venue">{{ venue }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}
+  </li>
+{% endfor %}
+</ul>

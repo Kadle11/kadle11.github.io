@@ -1,0 +1,10 @@
+<h2 id="news">News</h2>
+
+<div class="news-scroll">
+{% for item in site.data.news.main %}
+  <div class="news-item">
+    <span class="news-title">{{ item.desc }}</span>
+    <span class="date">{{ item.date }}</span>
+  </div>
+{% endfor %}
+</div>
