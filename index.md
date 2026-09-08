@@ -16,13 +16,7 @@ layout: homepage
     <div class="intro-unit">
       I work on memory disaggregation, vector databases, and systems for AI and
       emerging hardware. My current work explores memory disaggregation and
-      near-data processing for datacenter and graph analytics workloads.
-    </div>
-
-    <div class="intro-unit">
-      During my Ph.D. I have interned at SoLab,
-      <a href="https://www.skhynix.com/">SK Hynix America</a> (Fall 2026), and at the
-      Systems Architecture Lab, <a href="https://www.hpe.com/us/en/hewlett-packard-labs.html">HPE Labs</a> (2025).
+      near-data processing for datacenter workloads.
     </div>
 
     <div class="intro-unit">
