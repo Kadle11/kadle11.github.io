@@ -2,9 +2,22 @@
 
 <div class="news-scroll">
 {% for item in site.data.news.main %}
+  {% case item.type %}
+    {% when 'award' %}{% assign icon = 'fa-trophy' %}
+    {% when 'talk' %}{% assign icon = 'fa-microphone' %}
+    {% when 'paper' %}{% assign icon = 'fa-file-alt' %}
+    {% when 'internship' %}{% assign icon = 'fa-briefcase' %}
+    {% when 'service' %}{% assign icon = 'fa-hands-helping' %}
+    {% when 'event' %}{% assign icon = 'fa-users' %}
+    {% when 'milestone' %}{% assign icon = 'fa-graduation-cap' %}
+    {% else %}{% assign icon = 'fa-bullhorn' %}
+  {% endcase %}
   <div class="news-item">
-    <span class="news-title">{{ item.desc }}</span>
-    <span class="date">{{ item.date }}</span>
+    <span class="news-icon news-icon--{{ item.type | default: 'default' }}" aria-hidden="true"><i class="fas {{ icon }}"></i></span>
+    <div class="news-body">
+      <span class="news-title">{{ item.desc }}</span>
+      <span class="date">{{ item.date }}</span>
+    </div>
   </div>
 {% endfor %}
 </div>

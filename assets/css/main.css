@@ -209,11 +209,39 @@ hr {
 }
 
 .news-item {
-  border-left: 1px solid #ded5c4;
-  padding-left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 15px;
   line-height: 1.5;
 }
+
+.news-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Tinted rounded-square icon per news type. */
+.news-icon {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85em;
+  color: #7a8288;
+  background: #f2f3f3;
+}
+
+.news-icon--award      { color: #b7791f; background: #fdf3dc; }
+.news-icon--talk       { color: #2b6cb0; background: #e3eefa; }
+.news-icon--paper      { color: #2f855a; background: #e2f4ea; }
+.news-icon--internship { color: #6b46c1; background: #ece6fa; }
+.news-icon--service    { color: #c05621; background: #fbe9dc; }
+.news-icon--event      { color: #b83280; background: #fae3ef; }
+.news-icon--milestone  { color: #0f7c86; background: #ddf3f4; }
 
 .news-title {
   font-size: 0.92em;
@@ -495,6 +523,15 @@ body.dark-mode .pub-links a:hover {
 body.dark-mode .news-scroll {
   scrollbar-color: #444 transparent;
 }
+
+body.dark-mode .news-icon                { color: #a0a6ab; background: #2a2a2a; }
+body.dark-mode .news-icon--award         { color: #f0c36a; background: #3a3020; }
+body.dark-mode .news-icon--talk          { color: #7fb2ea; background: #1f2d3d; }
+body.dark-mode .news-icon--paper         { color: #74c99a; background: #1e3328; }
+body.dark-mode .news-icon--internship    { color: #b39ced; background: #2c2540; }
+body.dark-mode .news-icon--service       { color: #f0a070; background: #3a2a1f; }
+body.dark-mode .news-icon--event         { color: #ee8cc4; background: #3a2030; }
+body.dark-mode .news-icon--milestone     { color: #6fd0d8; background: #1c3436; }
 
 body.dark-mode .news-scroll::-webkit-scrollbar-thumb {
   background-color: #444;
