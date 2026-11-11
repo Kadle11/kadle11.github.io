@@ -1,9 +1,15 @@
 # type picks the icon and its colour (see _includes/news.html):
 #   award, talk, paper, internship, service, event, milestone
 main:
+  - date: "Nov. 2026"
+    type: award
+    desc: "Vectini won Best Poster (Systems for Emerging Hardware track) at SRC PRISM Annual Review!"
   - date: "Sep. 2026"
     type: internship
     desc: "Started as an AI/HPC Systems Research Intern at SoLab, SK Hynix America."
+  - date: "Oct. 2025"
+    type: award
+    desc: "Grudon won Best Poster Runner-up (Systems for Emerging Hardware track) at SRC PRISM Annual Review!"
   - date: "Aug. 2025"
     type: milestone
     desc: "Passed the systems qualifier exam at GaTech!"

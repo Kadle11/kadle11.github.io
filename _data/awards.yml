@@ -2,8 +2,12 @@
 # `date` and `detail` are optional; `detail` adds a smaller second line.
 
 main:
+  - date: "2026"
+    name: "Best Poster, SRC PRISM Annual Review (Systems for Emerging Hardware track)"
+    detail: "Vectini: Collaborative Vector Search on CXL-based Computational Memory"
+
   - date: "2025"
-    name: "Best Poster Runner-up, SRC PRISM Annual Review"
+    name: "Best Poster Runner-up, SRC PRISM Annual Review (Systems for Emerging Hardware track)"
     detail: "Grudon: Deploying Graph Workloads on Disaggregated Architectures with Near-Data Processing"
 
   - date: "2016 – 2020"
